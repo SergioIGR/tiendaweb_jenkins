@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title> Tienda v3.0 </title>
+    <link rel='stylesheet'> <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+<cabecera>
+    <div class="pattern">
+        <div class="container">
+            <div class="pattern-inner"> </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <h1>
+            <span> Tienda v3.0 - Equipo B.</span>
+        </h1>
+    </div>
+</cabecera>
+
+<principal>
+    <div class="content">
+        <h2> Buscar clientes: </h2>
+        <form action="buscarClienteObjeto.php" method="post">
+            <p> Busqueda: <input type="text" name="busqueda"/> </p>
+            Por nombre: <input type="radio" id="nombre" name="param" value="nombre"> <br>
+            Por apellido/s: <input type="radio" id="apellido" name="param" value="apellidos"> <br>
+            Por DNI:  <input type="radio" id="dni" name="param" value="dni"> <br>
+            Por email:  <input type="radio" id="email" name="param" value="email"> <br>
+            Por fecha de nacimiento:  <input type="radio" id="fecha" name="param" value="fecha_nacimiento"> <br>
+            <p> <input type="submit"/> </p>
+        </form>
+    </div>
+</principal>
+
+<button onclick="location.href='index.html'">Ir a Inicio.</button>
+</body>
+</html>
+

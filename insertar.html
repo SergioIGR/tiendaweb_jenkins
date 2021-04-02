@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title> Tienda v3.0 </title>
+    <link rel='stylesheet'> <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+<cabecera>
+    <div class="pattern">
+        <div class="container">
+            <div class="pattern-inner"> </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <h1>
+            <span> Tienda v3.0 - Equipo B.</span>
+        </h1>
+    </div>
+</cabecera>
+
+<principal>
+    <div class="content">
+        <h2> Insertar producto: </h2>
+        <form action="insertarProductoObjeto.php" method="post">
+            <p> Codigo: <input type="number" name="CodProducto"> </p>
+            <p> Descripcion: <input type="text" name="Descripcion"></p>
+            <p> Precio: <input type="number" name="Precio"> </p>
+	    <p> Stock: <input type="number" name="Stock"></p>
+            <p> <input type="submit"/> </p>
+        </form>
+    </div>
+</principal>
+
+<button onclick="location.href='index.html'"> Ir a Inicio.</button>
+</body>
+</html>
